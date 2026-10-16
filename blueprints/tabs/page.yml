@@ -1,0 +1,115 @@
+label: e9li.seo.tab
+icon: search
+columns:
+    - width: 2/3
+      fields:
+          metaHeadline:
+              label: e9li.seo.meta.headline
+              type: headline
+              numbered: false
+          metaTitle:
+              label: e9li.seo.metaTitle.label
+              help: e9li.seo.metaTitle.help
+              type: text
+              placeholder: "{{ page.title }}"
+          metaDescription:
+              label: e9li.seo.metaDescription.label
+              help: e9li.seo.metaDescription.help
+              type: textarea
+              buttons: false
+              size: small
+          lineMeta:
+              type: line
+          ogHeadline:
+              label: e9li.seo.og.headline
+              type: headline
+              numbered: false
+              help: e9li.seo.og.headline.help
+          ogDescription:
+              label: e9li.seo.ogDescription.label
+              help: e9li.seo.ogDescription.help
+              type: textarea
+              buttons: false
+              size: small
+          ogImage:
+              label: e9li.seo.ogImage.label
+              type: files
+              multiple: false
+              query: model.images.filterBy('isResizable', true)
+          cropOgImage:
+              label: e9li.seo.cropOgImage.label
+              help: e9li.seo.cropOgImage.help
+              type: toggles
+              default: default
+              reset: false
+              options:
+                  default: "{{ t('e9li.seo.common.default') }}"
+                  "true": "{{ t('e9li.seo.common.yes') }}"
+                  "false": "{{ t('e9li.seo.common.no') }}"
+          lineRobots:
+              type: line
+          robotsHeadline:
+              label: e9li.seo.robots.headline
+              type: headline
+              numbered: false
+          robotsIndex:
+              label: e9li.seo.robots.index.label
+              help: e9li.seo.robots.index.help
+              type: toggles
+              width: 1/2
+              default: default
+              reset: false
+              options:
+                  default: "{{ t('e9li.seo.common.default') }}"
+                  "true": "{{ t('e9li.seo.common.yes') }}"
+                  "false": "{{ t('e9li.seo.common.no') }}"
+          robotsFollow:
+              label: e9li.seo.robots.follow.label
+              help: e9li.seo.robots.follow.help
+              type: toggles
+              width: 1/2
+              default: default
+              reset: false
+              options:
+                  default: "{{ t('e9li.seo.common.default') }}"
+                  "true": "{{ t('e9li.seo.common.yes') }}"
+                  "false": "{{ t('e9li.seo.common.no') }}"
+          robotsArchive:
+              label: e9li.seo.robots.archive.label
+              help: e9li.seo.robots.archive.help
+              type: toggles
+              width: 1/2
+              default: default
+              reset: false
+              options:
+                  default: "{{ t('e9li.seo.common.default') }}"
+                  "true": "{{ t('e9li.seo.common.yes') }}"
+                  "false": "{{ t('e9li.seo.common.no') }}"
+          robotsImageindex:
+              label: e9li.seo.robots.imageindex.label
+              help: e9li.seo.robots.imageindex.help
+              type: toggles
+              width: 1/2
+              default: default
+              reset: false
+              options:
+                  default: "{{ t('e9li.seo.common.default') }}"
+                  "true": "{{ t('e9li.seo.common.yes') }}"
+                  "false": "{{ t('e9li.seo.common.no') }}"
+          robotsSnippet:
+              label: e9li.seo.robots.snippet.label
+              help: e9li.seo.robots.snippet.help
+              type: toggles
+              width: 1/2
+              default: default
+              reset: false
+              options:
+                  default: "{{ t('e9li.seo.common.default') }}"
+                  "true": "{{ t('e9li.seo.common.yes') }}"
+                  "false": "{{ t('e9li.seo.common.no') }}"
+    - width: 1/3
+      fields:
+          seoInfo:
+              type: info
+              theme: info
+              text: e9li.seo.page.info
