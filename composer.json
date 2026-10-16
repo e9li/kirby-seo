@@ -3,7 +3,6 @@
     "description": "Lightweight SEO tab, meta tags, Open Graph, robots.txt and sitemap.xml for Kirby",
     "type": "kirby-plugin",
     "license": "MIT",
-    "version": "0.1.0",
     "authors": [
         {
             "name": "Rafael Egli",
